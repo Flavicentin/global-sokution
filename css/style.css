@@ -32,6 +32,11 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
 }
 
 /*========  BASE ======== */
@@ -103,6 +108,10 @@ body {
 
 .section .title {
   margin-bottom: 1rem;
+}
+
+.section .subtitle{
+  font-size: var(--subtitle-font-size);
 }
 
 .section header {
@@ -516,6 +525,103 @@ footer .social a:hover{
   transform: translate(0);
 }
 
-@media(min-widht: 992px){
-   
+@media(min-width: 890px){
+  .container{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding: 8rem 0;
+  }
+
+  .section header{
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button{
+    height: 3.125rem;
+  }
+
+  /*========  NAV ========*/
+  nav .menu{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul{
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title{
+    font: 400 1rem var(--body-font);
+  }
+
+  nav .open{
+    display: none;
+  }
+
+  /*========  HOME ========*/
+
+  #home .container{
+    grid-auto-flow: column;
+    /* width: fit-content; */
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image{
+    order: 1;
+  }
+
+  #home .text{
+    order: 0;
+    max-width:  24rem;
+    text-align: left;
+  }
+
+  /*========  ABOUT ========*/
+  #about .container{
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /*========  SERVICES ========*/
+  .cardss{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards{
+    margin-right: 1rem;
+  }
+
+  /*========  CONTACT ========*/
+  #contact .container{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  #contact .text{
+    max-width: 25rem;
+  }
+
+  #contact .links{
+    margin-right: 11rem;
+  }
+
+  /*========  CONTACT ========*/
+  footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
