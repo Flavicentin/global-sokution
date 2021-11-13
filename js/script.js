@@ -56,7 +56,7 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal('#home',{interval: 100});
 scrollReveal.reveal('#about ',{interval: 100});
 scrollReveal.reveal('#services',{interval: 100});
-scrollReveal.reveal('#testimonials',{interval: 100});
+scrollReveal.reveal('#teams',{interval: 100});
 scrollReveal.reveal('#contact',{interval: 100});
 scrollReveal.reveal('footer .brand, footer',{interval: 100});
 
